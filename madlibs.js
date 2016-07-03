@@ -5,11 +5,9 @@ var place = ['Albania', 'Andorra', 'Armenia', 'Austria', 'Azerbaijan', 'Belarus'
 var vehicle = ['aerosani', 'airship', 'all-terrain vehicle', 'amphibious all-terrain vehicle', 'amphibious vehicle', 'autogyro', 'automobile', 'auto rickshaw', 'balloon', 'bathyscaphe', 'bicycle', 'blimp', 'boat', 'bus', 'cable car', 'canoe', 'bus', 'cycle rickshaw', 'dandy horse', 'deep Submergence Vehicle', 'diving bell', 'diving chamber', 'dog sled', 'draisine', 'electric vehicle', 'fdixed-wing aircraft', 'golf cart', 'ground effect vehicle', 'glider aircraft', 'handcar', 'hang glider', 'hopper', 'helicopter', 'hovercraft', 'hydrofoil', 'jet aircraft', 'jet pack', 'kayak', 'land yacht', 'launch escape capsule', 'locomotive', 'maglev', 'minibus', 'minivan', 'monorail', 'monowheel', 'moped', 'motorcycle', 'ornithopter', 'passenger car', 'rickshaw', 'pedalo', 'pogo Stick', 'powered parachute', 'quadracycle', 'race car', 'road train', 'rocket', 'rocket sled', 'rover', 'sailboat', 'scooter (motorcycle)', 'screw-propelled vehicle', 'sea tractor', 'segway', 'ship', 'single-track vehicle', 'skateboard', 'skis', 'sled', 'snowboard', 'snowmobile', 'space Hopper', 'sports car', 'steam car', 'submarine', 'submersible', 'surfboard', 'suv', 'tank', 'tractor', 'traction engine', 'train', 'tram', 'tricycle', 'trolleybus', 'truck', 'unicycle', 'unmanned aerial vehicle', 'van', 'velocipede', 'velomobile', 'wagon', 'wheelbarrow', 'wingpack', 'yacht', 'zipline']
 var verb = ['accept', 'ache', 'acknowledge', 'act', 'add', 'admire', 'admit', 'admonish', 'advise', 'adopt', 'affirm', 'afford', 'agree', 'ail', 'alert', 'allege', 'allow', 'allude', 'amuse', 'analyze', 'announce', 'annoy', 'answer', 'apologize', 'appeal', 'appear', 'applaud', 'appreciate', 'approve', 'argue', 'arrange', 'arrest', 'arrive', 'articulate', 'ask', 'assert', 'assure', 'attach', 'attack', 'attempt', 'attend', 'attract', 'auction', 'avoid', 'avow', 'awake']
 
-
 function ArrayPosition(typeOfWord) {
   return Math.round (Math.floor(Math.random() * typeOfWord.length));
 }
-
 
 console.log(
   'Once upon a time there was an '
@@ -30,7 +28,3 @@ console.log(
   + vehicle[ArrayPosition(vehicle)]
   + ' crashed.  It had to walk the rest of the way.'
 );
-
-
-
-
