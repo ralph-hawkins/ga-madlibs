@@ -6,25 +6,26 @@ var vehicle = ['aerosani', 'airship', 'all-terrain vehicle', 'amphibious all-ter
 var verb = ['accept', 'ache', 'acknowledge', 'act', 'add', 'admire', 'admit', 'admonish', 'advise', 'adopt', 'affirm', 'afford', 'agree', 'ail', 'alert', 'allege', 'allow', 'allude', 'amuse', 'analyze', 'announce', 'annoy', 'answer', 'apologize', 'appeal', 'appear', 'applaud', 'appreciate', 'approve', 'argue', 'arrange', 'arrest', 'arrive', 'articulate', 'ask', 'assert', 'assure', 'attach', 'attack', 'attempt', 'attend', 'attract', 'auction', 'avoid', 'avow', 'awake']
 
 function ArrayPosition(typeOfWord) {
-  return Math.round (Math.floor(Math.random() * typeOfWord.length));
+  var index = Math.round (Math.floor(Math.random() * typeOfWord.length));
+  return typeOfWord[index]
 }
 
 console.log(
   'Once upon a time there was an '
-  + adjective[ArrayPosition(adjective)]
+  + ArrayPosition(adjective)
   + ' '
-  + noun[ArrayPosition(noun)]
+  + ArrayPosition(noun)
   + '. It was really '
-  + adjective[ArrayPosition(adjective)]
+  + ArrayPosition(adjective)
   + '. It liked to '
-  + verb[ArrayPosition(verb)]
+  + ArrayPosition(verb)
   + ' all day. One day, it went to '
-  + place[ArrayPosition(place)]
+  + ArrayPosition(place)
   + ' to meet '
-  + person[ArrayPosition(person)]
+  + ArrayPosition(person)
   + '. To get there, it rode in a '
-  + vehicle[ArrayPosition(vehicle)]
+  + ArrayPosition(vehicle)
   + ', but on the way there, the '
-  + vehicle[ArrayPosition(vehicle)]
+  + ArrayPosition(vehicle)
   + ' crashed.  It had to walk the rest of the way.'
 );
