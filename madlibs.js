@@ -6,7 +6,7 @@ var vehicle = ['aerosani', 'airship', 'all-terrain vehicle', 'amphibious all-ter
 var verb = ['accept', 'ache', 'acknowledge', 'act', 'add', 'admire', 'admit', 'admonish', 'advise', 'adopt', 'affirm', 'afford', 'agree', 'ail', 'alert', 'allege', 'allow', 'allude', 'amuse', 'analyze', 'announce', 'annoy', 'answer', 'apologize', 'appeal', 'appear', 'applaud', 'appreciate', 'approve', 'argue', 'arrange', 'arrest', 'arrive', 'articulate', 'ask', 'assert', 'assure', 'attach', 'attack', 'attempt', 'attend', 'attract', 'auction', 'avoid', 'avow', 'awake']
 
 function arrayPosition(typeOfWord) {
-  var index = Math.floor(Math.random() * typeOfWord.length);
+  var index = Math.floor(Math.random() * (typeOfWord.length - 1));
   return typeOfWord[index]
 }
 
